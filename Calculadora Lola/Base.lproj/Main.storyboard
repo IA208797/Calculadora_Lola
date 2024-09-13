@@ -23,8 +23,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hola Mundo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLI-uz-Rqd">
-                                <rect key="frame" x="150.66666666666666" y="225.33333333333334" width="92" height="20.333333333333343"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Operación" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLI-uz-Rqd">
+                                <rect key="frame" x="157" y="225.33333333333334" width="79" height="20.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -64,6 +64,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="="/>
                                                 <connections>
+                                                    <action selector="obtener_resultado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ben-l2-cdP"/>
                                                     <action selector="que_hacer_al_pushar_boton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7au-xd-fm6"/>
                                                 </connections>
                                             </button>
@@ -138,6 +139,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Op"/>
                                                 <connections>
+                                                    <action selector="boton_escoger_operacion_pulsado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rCt-U0-ECZ"/>
                                                     <action selector="que_hacer_al_pushar_boton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tyz-S0-bQI"/>
                                                 </connections>
                                             </button>
@@ -158,6 +160,7 @@
                     <connections>
                         <outlet property="boton_operacion" destination="RnF-jG-WE9" id="KWS-bo-boH"/>
                         <outlet property="texto_a_cambiar" destination="OLI-uz-Rqd" id="gGa-GL-Mri"/>
+                        <outlet property="vista_stack" destination="AaF-An-ERF" id="d09-x2-tE8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
